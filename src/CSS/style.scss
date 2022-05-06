@@ -1,0 +1,38 @@
+//Font import
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;700;800;900&display=fallback');
+
+// AOS styles
+$aos-distance: 12px;
+@import 'node_modules/aos/src/sass/aos.scss';
+
+// Typography
+.h1 {
+    @apply text-4xl font-extrabold leading-snug tracking-tight;
+}
+
+.h2 {
+    @apply text-3xl font-extrabold leading-snug tracking-tight;
+}
+
+.h3 {
+    @apply text-3xl font-bold leading-snug tracking-tight;
+}
+
+.h4 {
+    @apply text-2xl font-bold leading-snug tracking-tight;
+}
+
+@tailwind base;
+@tailwind components;
+
+//Adding custom style
+@tailwind utilities;
+
+// Additional styling
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+}
+
+
